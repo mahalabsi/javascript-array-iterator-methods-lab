@@ -275,3 +275,47 @@ console.log('Exercise 5 correct result: ', [
   'Tony Blair',
   'William Blake'
 ])
+
+/*
+Exercise 6: Array.prototype.some()
+
+Determine if there is at least one person in the devs array who is 18 years 
+old or older.
+
+- You have an array of people with their respective ages.
+- Use the Array.prototype.some() method to check if any person in the array is 
+  18 years old or older.
+- Store the result (true or false) in the variable 'isAdultPresent'. 
+*/
+
+let isAdultPresent = devs.some((dev) => {
+  return dev.age >= 18
+})
+
+// Complete the exercise in the space below:
+
+// Check your work:
+console.log('Exercise 6 my result: ', isAdultPresent)
+console.log('Exercise 6 correct result: ', true)
+
+/*
+Exercise 7: Array.prototype.every()
+
+Use Array.prototype.every() to determine if every person in the devs array is 
+19 years old or older.
+
+- You have an array of individuals, each with their year of birth represented
+  by the 'year' property.
+- Use the Array.prototype.every() method to verify if every individual in the
+  array is at least 19 years old.
+- Store the result (true or false) in the variable 'isEveryone19OrOlder'.
+*/
+
+let isEveryone19OrOlder = devs.every((all) => {
+  return all.age >= 19
+})
+// Complete the exercise in the space below:
+
+// Check your work:
+console.log('Exercise 7 my result: ', isEveryone19OrOlder)
+console.log('Exercise 7 correct result: ', false)
